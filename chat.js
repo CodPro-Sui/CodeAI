@@ -141,7 +141,7 @@ document.querySelector(".signUp").style.display = "none";
   
   
   
-  const API_KEY = "AIzaSyBlESOOXb1FPvVC3T4bDmSnR-Wzi70mXmc";
+  const API_KEY = "AIzaSyDBXZbA-bJ8WH0vXRyHb8zWtjHhg96OpVo";
 
   async function response(txt) {
     abortController = new AbortController();
