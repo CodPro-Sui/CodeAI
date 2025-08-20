@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- style link -->
+  <link rel="stylesheet" href="login.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="chat.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
+  <title>Code with CS</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- main page -->
+  <div class="main-page">
+    
+    <!-- sign up -->
+        <div class="signUp">
+      <header class="headSection">
+        <a href="#"><img src="logo.png" alt="logo_pic" /></a>
+      </header>
+      
+      <!-- login -->
+      <div class="dataHandle">
+        <form method="get" accept-charset="utf-8">
+          <h2 class="headTitle">Sign Up</h2>
+          <!-- name  -->
+          <div class="userName cv">
+            <input type="text" name="userName" id="userName" placeholder="CodPro Sui" />
+            <!-- err handling -->
+            <div id="errName">
+              
+            </div>
+          </div>
+          
+          <!-- email  -->
+          <div class="userEmail cv">
+            <input type="email" name="userId" id="userId" placeholder="example@domain.com" />
+            <!-- err handling -->
+            <div id="errId">
+              
+            </div>
+          </div>
+          
+          <!-- number  -->
+          <div class="userNb cv">
+            <input type="number" name="userNum" id="userNum" placeholder="4444455555" />
+            <!-- err handling -->
+            <div id="errNumber">
+              
+            </div>
+          </div>
+          
+          <!-- submit btn -->
+          <div class="register">
+            <button type="submit" id="regis" disabled>Signup</button>
+          </div>
+          <p class="haveAcc">I have already account <a href="#">SignIn</a></p>
+        </form>
+      </div>
+      
+      <footer class="footer">
+        <p>Copyright &copy; 2025 CodPro</p>
+        <div class="bts">
+          <span>DSA</span>
+          <span>Rust</span>
+          <span>Game Engine</span>
+        </div>
+        <div class="pc">
+          <div class="fimg">
+            <img src="my.png" alt="my_pic" />
+          </div>
+          <p>India</p>
+        </div>
+      </footer>
+    </div>
+    <!-- sign up end -->
+    
+    <!-- bashboard AI -->
+    <div class="dashboardAi">
+      <!-- destop logo -->
+      <div class="deslogo">
+        <div class="dlogo"><a href="#"><img src="logo.png" alt="logo_pic"></a></div>
+      </div>
+      <!-- manu & logo -->
+      <div class="manu-btns">
+        <!-- manu -->
+        <div class="userManu">
+          <div id="bar"></div>
+        </div>
+        <!-- logo -->
+        <div class="imgLogo"><a href="#"><img src="logo.png" alt="logo_pic"></a></div>
+        <!-- hide -->
+        <div class="userDetails">
+          <h2 id="Acc" class="headTitle">Account</h2>
+          <div>Name: <span id="un"></span></div>
+          <div>E-mail: <span id="um"></span></div>
+        </div>
+        <!-- hide destop history -->
+        <div id="idOfUser">
+          <div class="hisTag">
+            <div class="his">Id: </div>
+            <div id="keyOfQ">3c16d85fbb52bc0f</div>
+          </div>
+          <div id="record">
+            
+          </div>
+        </div>
+        
+      </div>
+      <!-- end manu parent -->
+      
+      <div class="messages">
+        <h2 class="attention headTitle">What do you need help with?</h2>
+      </div>
+      <!-- ask anything -->
+      <div class="cnt">
+        <div class="ask">
+          <textarea name="askai" id="askai" placeholder="Ask anything..." rows="1"></textarea>
+          <i class="fa-solid fa-microphone" id="mic"></i>
+          <button type="submit" id="send" disabled><i class="fa-solid fa-paper-plane"></i></button>
+          <!-- cancel btn -->
+          <button type="submit" id="stop"><i class="fa-solid fa-circle-stop"></i></button>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    <!-- end ai -->
+    
+    <!-- end main parent -->
+  </div>
+
+  <script src="chat.js" type="text/javascript" charset="utf-8"></script>
+  <script src="login.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>

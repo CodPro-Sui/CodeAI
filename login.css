@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root{
+  --bg1 : #25C3CA;
+  --bg2 : #177ECE;
+  --bg3: #7ACE17;
+  --linkC: #1B7FD5;
+  --spb: #8F9FA9;
+}
+body{
+  
+}
+
+.signUp{
+  width: 100%;
+  height: 100dvh;
+  background: #D7D8E0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.headSection{
+  display: flex;
+  padding: 2px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--spb);
+  box-shadow: 0 3px 7px rgba(0,0,0,.1);
+}
+.headSection a{
+  width: 3rem;
+  height: 3rem;
+  left: 0;
+  position: relative;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.headTitle{
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  color: transparent;
+  background: linear-gradient(38deg,#1381B1,#C51784);
+  -webkit-background-clip: text;
+}
+.headSection a img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+.dataHandle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.dataHandle form{
+  width: 270px;
+  background: #E7EBEF;
+  border-radius: 14px;
+  padding: 15px;
+  border: 1px solid #F8F8F8;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.15),
+  5px 8px 7px rgba(0,0,0,.15);
+}
+.dataHandle form input{
+  width: 100%;
+  margin-top: 7px;
+  padding: 4px;
+  font-size: 1em;
+  letter-spacing: .2px;
+  color: #0E181F;
+  outline: none;
+  border: 1px solid #212528;
+  border-radius: 7px;
+  background: transparent;
+  transition: all .09s ease;
+}
+.dataHandle form input::placeholder{
+  color: #0E181FCF;
+  transition: all .09s ease;
+}
+.dataHandle form input:focus{
+  transition: all .09s ease;
+  border: 1px solid #2EA0D8;
+  outline: 3px solid #2EA0D866;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 4px 0;
+}
+.register button{
+  padding: 3px 22px;
+  font-size: 1.02em;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 5px;
+  border: none;
+  background: #89ADC9;
+  color: #FFFFFF;
+  letter-spacing: .3px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.1);
+  transition: all .09s ease;
+}
+.register button:active{
+  transition: all .09s ease;
+  transform: scale(.96);
+}
+.haveAcc{
+  text-align: center;
+  padding: 2px;
+  letter-spacing: .3px;
+  color: #455557;
+}
+.haveAcc a{
+  color: #23A6DF;
+  text-decoration: none;
+}
+.footer{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 7px;
+  font-size: .7em;
+  color: #0F181F;
+  border-top: 1px solid #9EA2A68A;
+  justify-content: space-between;
+}
+.fimg{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fimg img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  
+}
+.pc{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cv div{
+  padding: 1px;
+  margin-top: 3px;
+  color: #FF0000;
+  font-size: .5em;
+  letter-spacing: .3px;
+}
+
+.bts{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50vw;
+}
+@media (min-width: 700px) and (max-width: 1300px){
+  .dataHandle form{
+    width: 320px;
+    padding: 23px 17px;
+  }
+}
+
